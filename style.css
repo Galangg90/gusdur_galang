@@ -1,0 +1,119 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    padding-top: 50px; /* Give space for fixed header */
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styles */
+main {
+    padding-top: 80px; /* To make room for fixed header */
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Section styles */
+.content-section {
+    padding: 40px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.content-section h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.content-section p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
